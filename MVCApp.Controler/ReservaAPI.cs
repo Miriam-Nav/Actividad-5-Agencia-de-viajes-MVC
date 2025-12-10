@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MVCApp.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Globalization;
 using System.Linq;
-using MVCApp.Model;
 
 namespace MVCApp.Controller
 {
@@ -19,35 +20,48 @@ namespace MVCApp.Controller
         }
 
         // Crear una nueva reserva
-        public void Crear(int idCliente, int idViaje)
+        public void Crear(int idCliente, int idViaje, string fechaTexto)
         {
+            // Comrpueba existencia del cliente
             var cliente = clienteRepo.BuscarPorId(idCliente);
-
             if (cliente == null)
             {
                 throw new Exception("El cliente no existe");
             }
 
+            // Comrpueba existencia del viaje
             var viaje = viajeRepo.BuscarPorId(idViaje);
             if (viaje == null)
             {
                 throw new Exception("El viaje no existe");
             }
 
+            // Comrpueba plazas disponibles
             if (viaje.PlazasDisponibles <= 0)
             {
                 throw new Exception("No hay plazas disponibles para este viaje");
             }
 
+            // Validación de formato de fecha
+            DateTime fechaReserva;
+            bool formatoCorrecto = DateTime.TryParseExact( fechaTexto, "dd/MM/yyyy", null, DateTimeStyles.None, out fechaReserva);
+
+            if (!formatoCorrecto)
+            {
+                throw new Exception("La fecha no tiene el formato correcto (dd/MM/yyyy)");
+            }
+
+            // Crea una reserva 
             var reserva = new Reservas
             {
                 IdCliente = idCliente,
                 IdViaje = idViaje,
-                FechaReserva = DateTime.Now
+                FechaReserva = fechaReserva
             };
 
-            // Reducir plazas
+            // Reduce plazas
             viaje.PlazasDisponibles = viaje.PlazasDisponibles - 1;
+
             viajeRepo.Editar(viaje);
             repo.Crear(reserva);
         }
@@ -55,6 +69,7 @@ namespace MVCApp.Controller
         // Cancelar una reserva y devolver plaza
         public void Cancelar(int idReserva)
         {
+            // Comprueba que existe la reserva
             var reserva = repo.BuscarPorId(idReserva);
 
             if (reserva == null)
@@ -62,16 +77,19 @@ namespace MVCApp.Controller
                 throw new Exception("La reserva no existe");
             }
 
+            // Comprueba que existe el viaje
             var viaje = reserva.Viajes;
             if (viaje == null)
             {
                 throw new Exception("El viaje asociado no existe");
             }
 
+
             // Devolver la plaza
             reserva.Viajes.PlazasDisponibles += 1;
+
             viajeRepo.Editar(viaje);
-            repo.Eliminar(reserva);
+            repo.Eliminar(reserva.IdReserva);
 
         }
 

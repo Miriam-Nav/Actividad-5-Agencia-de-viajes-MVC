@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViajes));
-            this.dgvViajes = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
@@ -42,24 +43,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViajes)).BeginInit();
+            this.dgvViajes = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvViajes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvViajes
-            // 
-            this.dgvViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvViajes.Location = new System.Drawing.Point(12, 321);
-            this.dgvViajes.Name = "dgvViajes";
-            this.dgvViajes.RowHeadersWidth = 62;
-            this.dgvViajes.RowTemplate.Height = 28;
-            this.dgvViajes.Size = new System.Drawing.Size(921, 223);
-            this.dgvViajes.TabIndex = 12;
-            this.dgvViajes.SelectionChanged += new System.EventHandler(this.dgvViajes_SelectionChanged);
             // 
             // btnEditar
             // 
@@ -176,7 +164,7 @@
             // 
             this.pictureBox1.Image = global::MVCApp.View.Properties.Resources.icons8_vuelo_100__1_;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(65, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,12 +194,53 @@
             this.panel1.Size = new System.Drawing.Size(947, 107);
             this.panel1.TabIndex = 29;
             // 
+            // dgvViajes
+            // 
+            this.dgvViajes.AllowUserToAddRows = false;
+            this.dgvViajes.AllowUserToDeleteRows = false;
+            this.dgvViajes.AllowUserToResizeColumns = false;
+            this.dgvViajes.AllowUserToResizeRows = false;
+            this.dgvViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvViajes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.LightYellow;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightYellow;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvViajes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvViajes.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvViajes.EnableHeadersVisualStyles = false;
+            this.dgvViajes.Location = new System.Drawing.Point(12, 318);
+            this.dgvViajes.MultiSelect = false;
+            this.dgvViajes.Name = "dgvViajes";
+            this.dgvViajes.ReadOnly = true;
+            this.dgvViajes.RowHeadersVisible = false;
+            this.dgvViajes.RowHeadersWidth = 62;
+            this.dgvViajes.RowTemplate.Height = 28;
+            this.dgvViajes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvViajes.Size = new System.Drawing.Size(921, 226);
+            this.dgvViajes.TabIndex = 19;
+            this.dgvViajes.SelectionChanged += new System.EventHandler(this.dgvViajes_SelectionChanged);
+            // 
             // frmViajes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
+            this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(945, 556);
+            this.Controls.Add(this.dgvViajes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblPlazas);
@@ -219,24 +248,21 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtPlazas);
             this.Controls.Add(this.txtDestino);
-            this.Controls.Add(this.dgvViajes);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnCrear);
             this.Name = "frmViajes";
             this.Text = "frmViajes";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvViajes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvViajes;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCrear;
@@ -249,5 +275,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvViajes;
     }
 }

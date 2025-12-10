@@ -15,11 +15,13 @@ namespace MVCApp.View
             listar();
         }
 
+        // Limpiar formulario
         private void limpiarFormulario()
         {
             txtNombre.Clear();
             txtApellidos.Clear();
             txtEmail.Clear();
+            dgvClientes.ClearSelection();
             dgvClientes.CurrentCell = null;
         }
 
@@ -36,6 +38,7 @@ namespace MVCApp.View
         {
             try
             {
+                // Crea un objeto cliente con datos del formulario
                 var c = new Clientes
                 {
                     Nombre = txtNombre.Text,
@@ -43,13 +46,15 @@ namespace MVCApp.View
                     Email = txtEmail.Text
                 };
 
+                // Llama a la API para crear cliente
                 api.Crear(c);
+
                 listar();
                 limpiarFormulario();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -60,18 +65,26 @@ namespace MVCApp.View
             {
                 if (dgvClientes.CurrentRow != null)
                 {
+                    // Obtiene el cliente seleccionado en el DGV
                     var c = (Clientes)dgvClientes.CurrentRow.DataBoundItem;
+
+                    // Actualiza datos con valores del formulario
                     c.Nombre = txtNombre.Text;
                     c.Apellidos = txtApellidos.Text;
                     c.Email = txtEmail.Text;
 
+                    // Llama a la API para editar cliente
                     api.Editar(c);
                     listar();
+                }
+                else
+                {
+                    MessageBox.Show("No hay Cliente seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -82,16 +95,27 @@ namespace MVCApp.View
             {
                 if (dgvClientes.CurrentRow != null)
                 {
+                    // Obtiene del ID del cliente seleccionado
                     int id = ((Clientes)dgvClientes.CurrentRow.DataBoundItem).IdCliente;
-                    api.Eliminar(id);
-                    listar();
-                    limpiarFormulario();
-                    MessageBox.Show("Cliente eliminado correctamente");
+
+                    // Confirma eliminación
+                    var confirmacion = MessageBox.Show("¿Quieres eliminar este cliente?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (confirmacion == DialogResult.Yes)
+                    {
+                        // Llama a la API para eliminar cliente
+                        api.Eliminar(id);
+                        listar();
+                        limpiarFormulario();
+                    }
+                }
+                else {
+                    MessageBox.Show("No hay Cliente seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -100,10 +124,10 @@ namespace MVCApp.View
             // Comprueba que hay cliente seleccionado
             if (dgvClientes.CurrentRow != null)
             {
-                // Obtenemos el objeto Clientes directamente del DataGridView
+                // Obtiene el objeto Clientes del DGV
                 var selectC = (Clientes)dgvClientes.CurrentRow.DataBoundItem;
 
-                // Si el cliente no es nulo, rellenamos los campos
+                // Si el cliente no es nulo rellenalos campos
                 if (selectC != null)
                 {
                     txtNombre.Text = selectC.Nombre;

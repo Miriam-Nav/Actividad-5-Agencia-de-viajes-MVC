@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.controler\\reservaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|solutionrelative:mvcapp.controler\\reservaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1716E4F8-10BF-43E1-AD6C-DD62C9DECCC2}|MVCApp.Model\\MVCApp.Model.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.model\\reservasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1716E4F8-10BF-43E1-AD6C-DD62C9DECCC2}|MVCApp.Model\\MVCApp.Model.csproj|solutionrelative:mvcapp.model\\reservasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.controler\\clienteapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|solutionrelative:mvcapp.controler\\clienteapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.controler\\viajeapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B31E80-71AD-45BC-850C-DBABDE5C383A}|MVCApp.Controler\\MVCApp.Controler.csproj|solutionrelative:mvcapp.controler\\viajeapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1716E4F8-10BF-43E1-AD6C-DD62C9DECCC2}|MVCApp.Model\\MVCApp.Model.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.model\\viajesrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1716E4F8-10BF-43E1-AD6C-DD62C9DECCC2}|MVCApp.Model\\MVCApp.Model.csproj|solutionrelative:mvcapp.model\\viajesrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmviajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmviajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|c:\\users\\miriam\\desktop\\desarrollo de interficies\\windows form\\agencia de viajes mvc\\mvcapp.view\\frmviajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E863D68-F602-4B84-AEB8-4C9487B31DA3}|MVCApp.View\\MVCApp.View.csproj|solutionrelative:mvcapp.view\\frmviajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViajesRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Model\\ViajesRepositorio.cs",
-              "RelativeDocumentMoniker": "MVCApp.Model\\ViajesRepositorio.cs",
-              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Model\\ViajesRepositorio.cs",
-              "RelativeToolTip": "MVCApp.Model\\ViajesRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClienteAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ClienteAPI.cs",
+              "RelativeDocumentMoniker": "MVCApp.Controler\\ClienteAPI.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ClienteAPI.cs",
+              "RelativeToolTip": "MVCApp.Controler\\ClienteAPI.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwBAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T18:53:58.925Z",
+              "WhenOpened": "2025-12-10T23:10:40.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViajeAPI.cs",
-              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ViajeAPI.cs",
-              "RelativeDocumentMoniker": "MVCApp.Controler\\ViajeAPI.cs",
-              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ViajeAPI.cs",
-              "RelativeToolTip": "MVCApp.Controler\\ViajeAPI.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmReservas.cs",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmReservas.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmReservas.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmReservas.cs",
+              "RelativeToolTip": "MVCApp.View\\frmReservas.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswNAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T18:53:28.767Z",
+              "WhenOpened": "2025-12-10T22:47:42.714Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmViajes.cs",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmViajes.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmViajes.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmViajes.cs",
+              "RelativeToolTip": "MVCApp.View\\frmViajes.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAASwFUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T22:47:01.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmViajes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmViajes.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmViajes.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmViajes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MVCApp.View\\frmViajes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T22:46:52.017Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReservaAPI.cs",
-              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ReservaAPI.cs",
-              "RelativeDocumentMoniker": "MVCApp.Controler\\ReservaAPI.cs",
-              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Controler\\ReservaAPI.cs",
-              "RelativeToolTip": "MVCApp.Controler\\ReservaAPI.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwEsAAAAJAAAAAAAAAA==",
+              "Title": "frmReservas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmReservas.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmReservas.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmReservas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MVCApp.View\\frmReservas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T18:50:19.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T22:46:50.194Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReservasRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Model\\ReservasRepositorio.cs",
-              "RelativeDocumentMoniker": "MVCApp.Model\\ReservasRepositorio.cs",
-              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.Model\\ReservasRepositorio.cs",
-              "RelativeToolTip": "MVCApp.Model\\ReservasRepositorio.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmClientes.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmClientes.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MVCApp.View\\frmClientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T18:49:36.899Z",
+              "WhenOpened": "2025-12-10T22:46:46.992Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmClientes.cs",
+              "DocumentMoniker": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmClientes.cs",
+              "RelativeDocumentMoniker": "MVCApp.View\\frmClientes.cs",
+              "ToolTip": "C:\\Users\\Miriam\\Desktop\\DESARROLLO DE INTERFICIES\\Windows Form\\Agencia de viajes MVC\\MVCApp.View\\frmClientes.cs",
+              "RelativeToolTip": "MVCApp.View\\frmClientes.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAASwFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T22:48:26.051Z",
               "EditorCaption": ""
             }
           ]

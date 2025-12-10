@@ -1,7 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using MVCApp.Controller;
+﻿using MVCApp.Controller;
 using MVCApp.Model;
+using System;
+using System.Drawing;
+using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace MVCApp.View
 {
@@ -18,7 +20,9 @@ namespace MVCApp.View
         // Listar viajes
         private void listar()
         {
+            // Llama al método de listar
             dgvViajes.DataSource = api.Listar();
+
             dgvViajes.Columns["Reservas"].Visible = false;
             dgvViajes.ClearSelection();
         }
@@ -29,6 +33,7 @@ namespace MVCApp.View
             txtDestino.Clear();
             txtPrecio.Clear();
             txtPlazas.Clear();
+            dgvViajes.ClearSelection();
             dgvViajes.CurrentCell = null;
         }
 
@@ -37,6 +42,7 @@ namespace MVCApp.View
         {
             try
             {
+                // Crea objeto viaje con datos del formulario
                 var v = new Viajes
                 {
                     Destino = txtDestino.Text,
@@ -44,14 +50,15 @@ namespace MVCApp.View
                     PlazasDisponibles = int.Parse(txtPlazas.Text)
                 };
 
+                // Llama a la API para crear viaje
                 api.Crear(v);
+
                 listar();
                 limpiarFormulario();
-                MessageBox.Show("Viaje creado correctamente");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -62,19 +69,26 @@ namespace MVCApp.View
             {
                 if (dgvViajes.CurrentRow != null)
                 {
-                    var v = (Viajes)dgvViajes.CurrentRow.DataBoundItem;
-                    v.Destino = txtDestino.Text;
-                    v.Precio = decimal.Parse(txtPrecio.Text);
-                    v.PlazasDisponibles = int.Parse(txtPlazas.Text);
+                    // Viaje seleccionado en el DGV
+                    var viaje = (Viajes)dgvViajes.CurrentRow.DataBoundItem;
 
-                    api.Editar(v);
+                    // Actualiza datos con valores del formulario
+                    viaje.Destino = txtDestino.Text;
+                    viaje.Precio = decimal.Parse(txtPrecio.Text);
+                    viaje.PlazasDisponibles = int.Parse(txtPlazas.Text);
+
+                    // Llama a la API para editar viaje
+                    api.Editar(viaje);
                     listar();
-                    MessageBox.Show("Viaje editado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("No hay Viaje seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -85,16 +99,23 @@ namespace MVCApp.View
             {
                 if (dgvViajes.CurrentRow != null)
                 {
+                    // ID del viaje seleccionado
                     int id = ((Viajes)dgvViajes.CurrentRow.DataBoundItem).IdViaje;
+
+                    // Llama a la API para eliminar viaje
                     api.Eliminar(id);
+
                     listar();
                     limpiarFormulario();
-                    MessageBox.Show("Viaje eliminado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("No hay Viaje seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -103,14 +124,18 @@ namespace MVCApp.View
         {
             if (dgvViajes.CurrentRow != null)
             {
+                // Viaje seleccionado
                 var selectV = (Viajes)dgvViajes.CurrentRow.DataBoundItem;
                 if (selectV != null)
                 {
+                    // Rellena los campos con los datos del viaje
                     txtDestino.Text = selectV.Destino;
                     txtPrecio.Text = selectV.Precio.ToString();
                     txtPlazas.Text = selectV.PlazasDisponibles.ToString();
                 }
             }
         }
+        
+
     }
 }

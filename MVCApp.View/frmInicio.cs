@@ -15,25 +15,25 @@ namespace MVCApp.View
         public frmInicio()
         {
             InitializeComponent();
-            //ClienteAPI api = new ClienteAPI();
-            //dgvClientes.DataSource = api.Listar();
-
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            // FORMULARIO DE CLIENTES
             frmClientes f = new frmClientes();
             f.ShowDialog();
         }
 
         private void btnViajes_Click(object sender, EventArgs e)
         {
+            // FORMULARIO DE VIAJES
             frmViajes f = new frmViajes();
             f.ShowDialog();
         }
 
         private void btnReservas_Click(object sender, EventArgs e)
         {
+            // FORMULARIO DE RESERVAS
             frmReservas f = new frmReservas();
             f.ShowDialog();
         }
