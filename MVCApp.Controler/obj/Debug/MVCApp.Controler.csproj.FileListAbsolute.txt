@@ -1,0 +1,15 @@
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Controler.dll.config
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Controler.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Controler.pdb
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\EntityFramework.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Model.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Model.pdb
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\MVCApp.Model.dll.config
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\EntityFramework.xml
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\obj\Debug\MVCApp.Controler.csproj.AssemblyReference.cache
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\obj\Debug\MVCApp.Controler.csproj.CoreCompileInputs.cache
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\obj\Debug\MVCApp.C.2113397F.Up2Date
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\obj\Debug\MVCApp.Controler.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Controler\obj\Debug\MVCApp.Controler.pdb

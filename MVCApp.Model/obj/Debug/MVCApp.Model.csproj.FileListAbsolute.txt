@@ -1,0 +1,12 @@
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\MVCApp.Model.dll.config
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\MVCApp.Model.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\MVCApp.Model.pdb
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\EntityFramework.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\EntityFramework.xml
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\obj\Debug\MVCApp.Model.csproj.AssemblyReference.cache
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\obj\Debug\MVCApp.Model.csproj.CoreCompileInputs.cache
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\obj\Debug\MVCApp.M.70C024DF.Up2Date
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\obj\Debug\MVCApp.Model.dll
+C:\Users\Miriam\Desktop\DESARROLLO DE INTERFICIES\Windows Form\Agencia de viajes MVC\MVCApp.Model\obj\Debug\MVCApp.Model.pdb

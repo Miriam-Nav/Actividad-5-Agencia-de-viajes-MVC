@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgenciaViajesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Reservas" Relationship="Self.FK__Reservas__IdClie__29572725" FromRole="Clientes" ToRole="Reservas" />
+  </EntityType>
+  <EntityType Name="Reservas">
+    <Key>
+      <PropertyRef Name="IdReserva" />
+    </Key>
+    <Property Name="IdReserva" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <Property Name="IdViaje" Type="Int32" Nullable="false" />
+    <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Reservas__IdClie__29572725" FromRole="Reservas" ToRole="Clientes" />
+    <NavigationProperty Name="Viajes" Relationship="Self.FK__Reservas__IdViaj__2A4B4B5E" FromRole="Reservas" ToRole="Viajes" />
+  </EntityType>
+  <EntityType Name="Viajes">
+    <Key>
+      <PropertyRef Name="IdViaje" />
+    </Key>
+    <Property Name="IdViaje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Destino" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PlazasDisponibles" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Reservas" Relationship="Self.FK__Reservas__IdViaj__2A4B4B5E" FromRole="Viajes" ToRole="Reservas" />
+  </EntityType>
+  <Association Name="FK__Reservas__IdClie__29572725">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reservas__IdViaj__2A4B4B5E">
+    <End Role="Viajes" Type="Self.Viajes" Multiplicity="1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Viajes">
+        <PropertyRef Name="IdViaje" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="IdViaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AgenciaViajesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Reservas" EntityType="Self.Reservas" />
+    <EntitySet Name="Viajes" EntityType="Self.Viajes" />
+    <AssociationSet Name="FK__Reservas__IdClie__29572725" Association="Self.FK__Reservas__IdClie__29572725">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reservas__IdViaj__2A4B4B5E" Association="Self.FK__Reservas__IdViaj__2A4B4B5E">
+      <End Role="Viajes" EntitySet="Viajes" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
